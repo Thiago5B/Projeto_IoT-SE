@@ -5,7 +5,7 @@
 <h1>Acesso ao AWS - Primeiros passos</h1>
 </head>
 <body>
-<h4>Primeiros passos</h4>
+<h4>Realizando cadastro no AWS</h4>
   <h3> Passo 01</h3>
   <p>
     Acesse o link <a href="https://aws.amazon.com/" target="_blank" rel="noopener"> AQUI </a> e realize o cadastro. 
