@@ -8,9 +8,10 @@
 <h4>Realizando cadastro no AWS</h4>
   <h3> Passo 01</h3>
   <p>
-    Acesse o link <a href="https://aws.amazon.com/" target="_blank" rel="noopener"> AQUI </a> e realize o cadastro. 
+    Acesse o link <a href="https://aws.amazon.com/" target="_blank" rel="noopener"> AQUI </a> e realize o cadastro, seguindo as instruções do próprio site.
     <break>
       <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/Crie_conta.png" title="AWS"/>
+      <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/Crie_conta_raiz.png" title="AWS"/>
     </break>
   </p>
   <p>
