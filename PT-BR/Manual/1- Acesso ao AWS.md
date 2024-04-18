@@ -11,7 +11,7 @@
     Acesse o link <a href="https://aws.amazon.com/" target="_blank" rel="noopener"> AQUI </a> e realize o cadastro, seguindo as instruções do próprio site.
     <break>
       <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/Crie_conta.png" title="AWS"/>
-      <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/Crie_conta_raiz.png" title="AWS"/>
+    <center></center><img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/Crie_conta_raiz.png" title="AWS"/></center>
     </break>
   </p>
   <p>
