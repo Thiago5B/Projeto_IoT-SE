@@ -18,11 +18,9 @@
       </p>
       <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/Crie_conta.png" alt="Tela de criação de conta no AWS">
-        <figcaption>Tela de criação de conta no AWS</figcaption>
       </figure>
       <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/Crie_conta_raiz.png" alt="Tela de criação de conta raiz no AWS">
-        <figcaption>Tela de criação de conta raiz no AWS</figcaption>
       </figure>
     </article>
     <article>
