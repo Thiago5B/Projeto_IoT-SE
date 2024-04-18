@@ -7,7 +7,7 @@
 <body>
 <h4>Primeiros passos</h4>
   <p>
-    Acesse o link <a href="https://aws.amazon.com/">
+    Acesse o link <a href="https://aws.amazon.com/"> AQUI </a>
   </p>
 </body>
 </html>
