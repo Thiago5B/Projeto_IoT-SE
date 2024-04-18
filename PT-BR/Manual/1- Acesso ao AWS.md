@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8"/>
-<h1>Acesso ao AWS - Primeiros passos</h1>
+<h1>Acesso ao AWS</h1>
 </head>
 <body>
 <h4>Realizando cadastro no AWS</h4>
