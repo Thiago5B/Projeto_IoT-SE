@@ -7,7 +7,10 @@
 <body>
 <h4>Primeiros passos</h4>
   <p>
-    Acesse o link <a href="https://aws.amazon.com/" target="_blank" rel="noopener"> AQUI </a> e realize o cadastro.
+    Acesse o link <a href="https://aws.amazon.com/" target="_blank" rel="noopener"> AQUI </a> e realize o cadastro. 
+    <break>
+      <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/Crie_conta.png" title="AWS"/>
+    </break>
   </p>
   <p>
     
