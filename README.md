@@ -7,3 +7,4 @@ Ideia principal: Algo na linha de Automação Residencial
 
 Opções de Servidor: Google Cloud, AWS, Modem Vivo
 
+(DESCREVER A ORGANIZAÇÂO DO GIT)
