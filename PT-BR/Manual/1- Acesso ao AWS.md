@@ -7,7 +7,7 @@
 <body>
 <h4>Primeiros passos</h4>
   <p>
-    Acesse o link <a href="https://aws.amazon.com/"  target="_blank"> AQUI </a> e realize o cadastro.
+    Acesse o link <a href="https://aws.amazon.com/" target="_blank" rel="noopener"> AQUI </a> e realize o cadastro.
   </p>
 </body>
 </html>
