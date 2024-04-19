@@ -56,7 +56,7 @@
         <strong> FAÇA O DOWNLOAD DE TODOS OS SEGUINTES CERTIFICADOS E RENOMEIE CADA UM PARA FACILITAR NOS PRÓXIMOS PASSOS</strong>, uma vez que não existe outro momento em que estes são disponibilizados.<br>
         Caso os perca, é necessário retornar ao "Passo 01" desta mesma página e refazer todo o processo. <br>
       <figure><img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/core_7.png">
-      <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/core_8.png"></figure>
+      <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/core_8.png"></figure><br>
       Com isso podemos dizer que temos nossa primeira "coisa" criada. Estamos prontos para programar nosso ESP32.        
       </p>
     </article>
