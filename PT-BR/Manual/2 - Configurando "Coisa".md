@@ -32,17 +32,23 @@
         </figure>
       </p>
       <p>
-        <strong>Clique no nome do servidor e lembre dessa opção! Vamos utilizar dessa informação mais tarde!</strong>
+        <strong>A seguir, manteremos as configurações como recomendadas</strong>
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/core_3.png">
         </figure>
       </p>
       <h3>Passo 03</h3>
       <p>
-        Agora na barra de pesquisa na parte superior esquerda, digite <strong>"IoT"</strong>, com isso devem aparecer algumas opções, como demostrado na figura a seguir. Selecione <strong> "IoT CORE" </strong>.
+        Agora precisaremos criar uma <strong>"Política"</strong>, isso faz com que o nosso dispostivo tenha acesso a recursos IoT. Selecione <strong> "Criar Política" </strong>. <br>
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/aws_5.png">
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/core_4.png">
         </figure>
+        Na nova página, crie um nome para a nova política e também selecione <br>
+        <strong> "Efeito de política" > "Permetir"</strong><br>
+        Já em ação de política você deve colocar : IoT:Connect, IoT:Publish, IoT:Recive e Iot:Subscribe.
+        <strong> "Recurso da política" deve ser preenchido com "*" </strong> <br>
+        Como demonstra a foto a seguir
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/core_6.png">
       </p>
     </article>
     <h3>Siga para o arquivo <a href=""><strong> da próxima seção</a></strong> do manual</h3>
