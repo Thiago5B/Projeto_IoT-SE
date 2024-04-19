@@ -43,12 +43,24 @@
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/core_4.png">
         </figure>
-        Na nova página, crie um nome para a nova política e também selecione <br>
+        <br>Na nova página, crie um nome para a nova política e também selecione <br>
         <strong> "Efeito de política" > "Permetir"</strong><br>
         Já em ação de política você deve colocar : IoT:Connect, IoT:Publish, IoT:Recive e Iot:Subscribe.
         <strong> "Recurso da política" deve ser preenchido com "*" </strong> <br>
         Como demonstra a foto a seguir
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/core_6.png">
+      </p>
+      <h3>Passo 04</h3>
+      <p>
+        Agora voltando para a aba de seleção de políticas e certificados, selecione a nova política recem criada.</br><br><strong> Por fim, clique em "Criar Item"</strong><br>
+        <strong> FAÇA O DOWNLOAD DE TODOS OS SEGUINTES CERTIFICADOS E RENOMEIE CADA UM PARA FACILITAR NOS PRÓXIMOS PASSOS</strong>, uma vez que não existe outro momento em que estes são disponibilizados.<br>
+        Caso os perca, é necessário retornar ao "Passo 01" desta mesma página e refazer todo o processo. <br>
+      <figure><img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/core_7.png">
+      <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/img/core_8.png"></figure>
+      
+        
+
+        
       </p>
     </article>
     <h3>Siga para o arquivo <a href=""><strong> da próxima seção</a></strong> do manual</h3>
