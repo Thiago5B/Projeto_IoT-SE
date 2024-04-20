@@ -39,7 +39,7 @@
         Unindo o útil ao agradável, decidimos fazer uma implementação do controle do portão utiilizando IoT.
       </p>
       <p>
-        Inicialmente, a implementação será feita realizando o contorle através de um celular, fazendo a comunicação simples pelo MQTT para abrir ou fechar o portão, porém almeja-se implementar um sistema
+        Inicialmente, a implementação será feita realizando o controle através de um celular, fazendo a comunicação simples pelo MQTT para abrir ou fechar o portão, porém almeja-se implementar um sistema
         de reconhecimento facial utilizando python, para que assim, além do portão da garagem, controlado pelo celular, possa-se abrir também o portão de pessoas, mas de forma automática, registrando os moradores
         em um banco de dados.
       </p>
