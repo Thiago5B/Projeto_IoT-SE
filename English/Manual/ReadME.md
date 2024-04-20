@@ -1,13 +1,12 @@
 <html>
-  <h1><b>Isso é um teste </b></h1>
-  Aqui você pode observar o código incluído no ESP 32.
-  Recomendamos que você siga os paços na seguinte ordem: <break>
-  1- Acesso ao AWS
-  2- Configurar "Coisa"
-  3- Implementação no ESP32
-  4- Teste MQTT
-  5- Configurar StreamDataBase
-  6- Teste StreamDataBase
-  7- Configurar Grafana
-  8- Craiando Dashboard
+  <h1><b>This is a test</b></h1>
+  Here you can see the code uploaded on the ESP 32. We recommend that you follow the steps in the following order: <br>
+  1- Access to AWS <br>
+  2- Configure "Thing" <br>
+  3- Implementation on ESP32 <br>
+  4- MQTT Test <br>
+  5- Configure StreamDataBase <br>
+  6- StreamDataBase Test <br>
+  7- Configure Grafana <br>
+  8- Creating Dashboard <br>
 </html>
