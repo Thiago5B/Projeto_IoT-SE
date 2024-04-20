@@ -9,5 +9,5 @@
   5- Configurar StreamDataBase <br>
   6- Teste StreamDataBase <br>
   7- Configurar Grafana <br>
-  8- Craiando Dashboard <br>
+  8- Criando Dashboard <br>
 </html>
