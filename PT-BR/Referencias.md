@@ -9,20 +9,14 @@
 </header>
 <main>
   <section>
-    <h2>Referências utilizadas:</h2>
     <p>
-      https://youtu.be/t8IoEHU0zhA?si=_zBR-AIHeNW_AfLO
-      The project was designed to not only develop the knowledge learned in class throughout the semesters of college but also to try to solve a problem present in our lives. Because of this, from the beginning, 
-      we already knew that whatever the project was, it would be based on some element or situation of the republic (student housing).
-    </p>
-    <p>
-      Thinking about IoT control, using microcontrollers, several ideas arose, for interesting projects but that did not solve any problems, and then would probably be abandoned when the course was finished. 
-      But then came the idea of controlling the garage door, which, in addition to not requiring many components besides the microcontroller, making it inexpensive, would make our lives easier.
-    </p>
-    <p>
-      Therefore, initially, the project's objective is to control the opening and closing of the garage door through an MQTT protocol, so that this action can be done through the cell phone, no longer 
-      by the physical control. In addition, the aim is to implement a facial recognition system using Python, so that, apart from the garage door, controlled by the cell phone, it is also possible to open 
-      the pedestrian gate, but automatically, registering residents in a database.
+      - Grafana - Criando Dashboard, by Robert Silva: <br> https://youtu.be/t8IoEHU0zhA?si=_zBR-AIHeNW_AfLO <br> <br>
+      - Episode 5: Storing data on AWS Timestream Database, by Amazon Web Services:<br> https://www.youtube.com/watch?v=TXIR7CAYemQ <br><br>
+      - Getting Started with Amazon Timestream, by Amazon Web Services: <br>https://youtu.be/8RHFPNReylI?si=Ksf5D-vyjOjxW1ww <br><br>
+      - Visualizing Data in Amazon Timestream using Grafana, by Amazon Web Services: <br>https://www.youtube.com/watch?v=pilkz645cs4 <br><br>
+      - Set Up an Amazon Managed Service for Grafana Dashboard with CloudWatch Integration, by Amazon Web Services: <br>https://youtu.be/y80Vn-FkBMc?si=QHpwn9cOdP8pnJeb <br><br>
+      - Device data to dashboard in 10 minutes - A demonstration, by AWS IoT: <br>https://youtu.be/z8T4hAERuOg?si=HcFGYDp3uZTYAebf <br><br>
+      - Getting Started with Amazon AWS IoT Core using ESP32 || Creating Thing, Policy & Certificates, by How to Electronics:<br> https://youtu.be/idf-gGXvIu4?si=DgLb1AGkXwcngXms <br><br>
     </p>
   </section>
 </main>
