@@ -33,17 +33,6 @@
         de maneira simples, permitindo a implementação de pequenas, ou até mesmo grandes, automações residenciais, por exemplo, tal qual uma Alexa controlando uma luz por comando de voz.
       </p>
   </section>
-  <section>
-    <h2>O projeto</h2>
-      <p>
-        Unindo o útil ao agradável, decidimos fazer uma implementação do controle do portão utiilizando IoT.
-      </p>
-      <p>
-        Inicialmente, a implementação será feita realizando o controle através de um celular, fazendo a comunicação simples pelo MQTT para abrir ou fechar o portão, porém almeja-se implementar um sistema
-        de reconhecimento facial utilizando python, para que assim, além do portão da garagem, controlado pelo celular, possa-se abrir também o portão de pessoas, mas de forma automática, registrando os moradores
-        em um banco de dados.
-      </p>
-  </section>
 </main>
 </body>
 </html>
