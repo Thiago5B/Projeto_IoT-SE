@@ -5,7 +5,7 @@
 </head>
 <body>
 <header>
-  <h1>Motvation</h1>
+  <h1>Motivation</h1>
 </header>
 <main>
   <section>
