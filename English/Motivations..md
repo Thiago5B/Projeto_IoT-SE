@@ -32,16 +32,6 @@
        connection, in a simple way, enabling the implementation of small, or even large, residential automations. For example, an Alexa controlling a light by voice command
       </p>
   </section>
-  <section>
-    <h2>The project</h2>
-      <p>
-        Combining the usefulness of the project to the necessity of the republic, we decided to implement a gate control using IoT
-      </p>
-      <p>
-        Initially, the implementation will be done by controlling through a cell phone, using simple MQTT communication to open or close the gate. However, the goal is to implement a facial recognition system using 
-        Python, so that, in addition to the garage door, controlled by the cell phone, it is also possible to open the pedestrian gate, but automatically, registering residents in a database.
-      </p>
-  </section>
 </main>
 </body>
 </html>
