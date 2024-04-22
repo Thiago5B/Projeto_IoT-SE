@@ -15,22 +15,21 @@
       <h3>Passo 01</h3>
       <p>
         Acesse e realize o download dos arquivos <strong>"Main.ino" e "secrets.h"</strong>.<br>
-        Garanta que você selecionou a placa ESP 32 e a porta, na plataforma <strong>"Arduino IDE" </strong>. Em caso de dúvida <a href="https://www.youtube.com/watch?v=ROkhP5oWRUU"> clique aqui para aprender a configurar a <strong>Arduino IDE</strong> para o ESP 32</a>
-        <figure>
-        <img src="">
-      </figure>
-        <br> Nesta tela é possível observar todas as "Coisas" criadas.
+        Garanta que você selecionou a placa ESP 32 e a porta, na plataforma <strong>"Arduino IDE" </strong>. Em caso de dúvida <a href="https://www.youtube.com/watch?v=ROkhP5oWRUU"> clique aqui para aprender a configurar a <strong>Arduino IDE</strong> para o ESP 32</a> <br>
       </p>
     </article>
     <article>
       <h3>Passo 02</h3>
       <p>
-        Vamos criar nossa primeira "Coisa". <br>
-        Para isso, clique em <strong>"Criar Itens"</strong>. Neste caso será criado apenas uma "Coisa" então, selecione a opção <strong>"Criar um único item" > "Próximo"</strong> <br>
-        Após isso, é possível nomear e detalhar as propriedades da "Coisa", deixaremos tudo como está, seguindo a figura.
+       <strong>Vamos editar o código de maneira a adequa-lo a sua conta AWS e sua "coisa".</strong> <br>
+        Para isso, já na <strong>"Arduino IDE"</strong> clique em <strong>"secrets.h"</strong>. 
+        <br> Vamos alterar primeiramente a rede wifi a ser utilizada pelo nosso ESP 32<br>
+        Para tal substitua <strong>5BOLA-FUNDO </strong> pelo nome da sua rede wifi. E também <strong>5bola2008_</strong> pela senha da sua rede wifi, como na figura a seguir.
         <figure>
         <img src="">
         </figure>
+        Após isso, é possível nomear e detalhar as propriedades da "Coisa", deixaremos tudo como está, seguindo a figura.
+        
       </p>
       <p>
         <strong>A seguir, manteremos as configurações como recomendadas</strong>
