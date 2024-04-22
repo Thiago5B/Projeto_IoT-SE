@@ -15,7 +15,7 @@
       <h3>Passo 01</h3>
       <p>
         Acesse e realize o download dos arquivos <strong>"Main.ino" e "secrets.h"</strong>.<br>
-        Garanta que você selecionou a placa ESP 32 e a porta, na plataforma <strong>"Arduino IDE" </strong>. Em caso de dúvida <a href=""> clique aqui para aprender a configurar a <strong>Arduino IDE</strong> para o ESP 32</a>
+        Garanta que você selecionou a placa ESP 32 e a porta, na plataforma <strong>"Arduino IDE" </strong>. Em caso de dúvida <a href="https://www.youtube.com/watch?v=ROkhP5oWRUU"> clique aqui para aprender a configurar a <strong>Arduino IDE</strong> para o ESP 32</a>
         <figure>
         <img src="">
       </figure>
