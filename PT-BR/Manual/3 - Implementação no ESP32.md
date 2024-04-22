@@ -14,8 +14,8 @@
     <article>
       <h3>Passo 01</h3>
       <p>
-        Ao acessar o IoT CORE, é possível observar na parte esquerda, um menu horizontal com diversas opções.<br>
-        Por hora, vamos para a aba <strong>"GERENCIAR" > "Todos os dispositivos" > "Coisas"</strong> , como demonstrado na seguinte figura.
+        Acesse e realize o download dos arquivos <strong>"Main.ino" e "secrets.h"</strong>.<br>
+        Garanta que você selecionou a placa ESP 32 e a porta, na plataforma <strong>"Arduino IDE" </strong>. Em caso de dúvida <a href=""> clique aqui para aprender a configurar a <strong>Arduino IDE</strong> para o ESP 32</a>
         <figure>
         <img src="">
       </figure>
