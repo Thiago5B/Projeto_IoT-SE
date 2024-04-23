@@ -10,55 +10,37 @@
 </header>
 <main>
   <section>
-    <h2>MQTT IoT CORE</h2>
+    <h2>Visão Geral</h2>
     <article>
-      <h3>Passo 01</h3>
       <p>
-       Abra o código na Arduino IDE e copie <strong>o tópico de publicação das mensagens</strong> e selecione como demonstrado na figura abaixo.<br>
+       Esse projeto foi desenvolvido utilizando um ESP32, o serviço de nuvem AWS e o Grafana como dashboard, como pode ser visto no fluxograma abaixo.
         <figure>
-          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_1.png">
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/Arquitetura.png">
         </figure>
-        <br>Neste caso, nosso tópico de inscrição é <strong>esp32/pub</strong>, pois o esp publica essa mensagem, cabo ao AWS se inscrever nela.
-        <br>Acesse novamente o <strong>"IoT CORE"</strong> e selecione <strong> "Testar"> "Cliente MQTT"</strong>.<br>
-        Garanta que a placa ESP 32 esteja ligada e com o LED vermelho acesso.<br>
+    <h2>Entendendo a arquitetura</h2>
+         <h3>Aquisição de dados</h3>
+        A aquisição de dados é feita através de um ESP32, conectado à um sensor ultrassônico de distância, um HC SR04, e à um LED. Enquanto a variável real relacionada ao sensor é recebida pelo microcontrolador, uma vez que o sensor retorna um valor de tensão proporcional à sua escala, a variável booleana do LED é escrita pelo micro, pois através dela é possível controlar o estado do LED, sendo <strong>1 = ON e 0 = OFF </strong><br>
       </p>
     </article>
     <article>
-      <h3>Passo 02</h3>
+      <h3>Comunicação dos dados</h3>
       <p>
-       <strong>Cole o nome do tópico na aba "Assinar um tópico" e clique em "Inscrever-se".</strong> <br>
-        Se tudo estiver correto, as mensagens deste tópico aparecerão logo abaixo<br>
-        <br>Como demonstrado a seguir:<br>
-        <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_2.png">
-        </figure>        
+       Uma vez adquiridos os dados, seu envio é feito através do protocolo MQTT até a nuvem, porém a segurança dos dados é feita através do protocolo TLS, que, basicamente, consiste em um tratamento de dados na forma de criptografia, onde apenas as duas pontas de uma conexão possuem a chave de segurança. Isso permite estabelecer uma conexão privada e confiável entre dois endereços da rede.<br><br>
+        Assim, estabelece-se uma conexão MQTT entre o ESP32 e a nuvem, o AWS IoT Core, pertmitindo o envio de sinais entre os dois através dos topics, porém as duas variáveis utilizadas (Leitura do sensor e controle do LED), tem lógicas invertidas com relação à comunicação, uma vez que:<br><br>
+        - LED: ESP32 -> subscribe -> AWS e então AWS -> publish -> ESP32<br>
+             <strong>De forma que o LED seja controlado pelo comando vindo da nuvem</strong><br>
+        - HC SR04: AWS -> subscribe -> ESP32 e então ESP32 -> publish -> AWS<br>
+             <strong>Para que o AWS IoT Core possa receber a distância lida pelo sensor</strong>
+        <br><br>
+        Com a comunicação estabelecida, os dados são então enviados ao Amazon Timestream, um serviço de banco da dados da Amazon, para que sejam armazenados, uma vez que os protocolos de comunicação não tem capacidade de gravar os valores transmitidos, enviando-os instantâneamente e então deletando-os assim que um novo dado é publicado.
       </p>
-      <h3>Passo 03</h3>
+      <h3>Visualização dos dados</h3>
       <p>
-        Agora vamos, enviar informações para o ESP, por meio de MQTT<br> 
-        Ainda na mesma aba, selecione <strong>"Publicar um tópico"</strong>, e cole o tópico de publicação. Neste caso, utilizarei o tópico <strong> esp32/sub </strong>, para demonstrar que a conexão está ativa. <br>
-        Como na figura abaixo:
-        <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_3.png">
-        </figure>
-        <br>Voltemos a  <strong> Arduino IDE</strong> e selecionemos o <strong>monitor serial</strong>. <br>
-        <br> É possível observar a mensagem publicada, como na imagem a seguir:<br>
-        <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_4.png">
-        </figure>
-      </p>
-      <h3>Passo 04</h3>
-      <p>
-        Agora para realizar o acionamento, do portão, basta trocar o tópico de publicação para <strong>led/sub</strong>.
-        <br><strong> Para abrir o portão, apague todo o payload e envie "1".<br> Para fechar o portão, envie "0"</strong>.<br>
-        <strong> O monitor serial deve ajuda-lo a entender o que está acontecendo, ele é seu melhor amigo </strong> <br>
-        <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_5.png">
-        </figure><br>
-     Com isso nosso ESP 32 está pareado com a AWS via MQTT e TLS e agora responde a nossas mensagens.        
+        Com os dados no banco de dados estabelecidos, é possível então fazer a visualização através de um serviço de dashboard, que, nesse caso, será o Grafana. Ele foi escolhido não só por sua simplicidade e uso gratuito, mas também porque, além de ser open-source, possui uma comunicação integrada com o Amazon Timestream, sendo necessário apenas configurar o plugin referente à esse banco de dados em sua biblioteca.<br><br>
+        Com o plugin configurado, ele automáticamente irá informar quais são suas databases já criadas e assim é possível utilizar os valores armazenados para fazer uma visualização na forma de um gráfico de linha, representando as mudanças ao longo do tempo.<br><br>
+        Infelizmente o controle do LED não é possível de ser feito diretamente no Grafana, já que ele apenas comunica com o banco de dados e não faz sentido armazenar valores de 0 ou 1, mas utilizando o AWS IoT Core, basta da publish no tópico correspondente com o estado desejado, que ele será controlado.
       </p>
     </article>
-    <h3>Siga para o arquivo <a href=""><strong> da próxima seção</a></strong> do manual</h3>
   </section>
 </main>
 </body>
