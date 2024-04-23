@@ -50,7 +50,7 @@
       <h3>Passo 04</h3>
       <p>
         Agora para realizar o acionamento, do portão, basta trocar o tópico de publicação para <strong>led/sub</strong>.
-        <br><strong> Para abrir o portão, apague todo o payload e envie "0".<br> Para fechar o portão, envie "1"</strong>.<br>
+        <br><strong> Para abrir o portão, apague todo o payload e envie "1".<br> Para fechar o portão, envie "0"</strong>.<br>
         <strong> O monitor serial deve ajuda-lo a entender o que está acontecendo, ele é seu melhor amigo </strong> <br>
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_5.png">
