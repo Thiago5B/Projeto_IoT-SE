@@ -6,11 +6,11 @@
 </head>
 <body>
 <header>
-  <h1>IoT Core</h1>
+  <h1>ESP32</h1>
 </header>
 <main>
   <section>
-    <h2>Criando coisa</h2>
+    <h2>Implementação</h2>
     <article>
       <h3>Passo 01</h3>
       <p>
