@@ -6,36 +6,40 @@
 </head>
 <body>
 <header>
-  <h1>IoT Core</h1>
+  <h1>Testando a conexão</h1>
 </header>
 <main>
   <section>
-    <h2>Criando coisa</h2>
+    <h2>MQTT IoT CORE</h2>
     <article>
       <h3>Passo 01</h3>
       <p>
-        Acesse e realize o download dos arquivos <strong>"Main.ino" e "secrets.h"</strong>.<br>
-        Garanta que você selecionou a placa ESP 32 e a porta, na plataforma <strong>"Arduino IDE" </strong>. Em caso de dúvida <a href="https://www.youtube.com/watch?v=ROkhP5oWRUU"> clique aqui para aprender a configurar a <strong>Arduino IDE</strong> para o ESP 32</a> <br>
+       Abra o código na Arduino IDE e copie <strong>o tópico de publicação das mensagens</strong> e selecione como demonstrado na figura abaixo.<br>
+        <figure>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_1.png">
+        </figure>
+        <br>Neste caso, nosso tópico de inscrição é <strong>esp32/pub</strong>, pois o esp publica essa mensagem, cabo ao AWS se inscrever nela.
+        <br>Acesse novamente o <strong>"IoT CORE"</strong> e selecione <strong> "Testar"> "Cliente MQTT"</strong>.<br>
+        Garanta que a placa ESP 32 esteja ligada e com o LED vermelho acesso.<br>
       </p>
     </article>
     <article>
       <h3>Passo 02</h3>
       <p>
-       <strong>Vamos editar o código de maneira a adequa-lo a sua conta AWS e sua "coisa".</strong> <br>
-        Para isso, já na <strong>"Arduino IDE"</strong> clique em <strong>"secrets.h"</strong>. 
-        <br> Vamos alterar primeiramente a rede wifi a ser utilizada pelo nosso ESP 32<br>
-        Para tal substitua <strong>5BOLA-FUNDO </strong> pelo nome da sua rede wifi. E também <strong>5bola2008_</strong> pela senha da sua rede wifi, como na figura a seguir.
+       <strong>Cole o nome do tópico na aba "Assinar um tópico" e clique em "Inscrever-se".</strong> <br>
+        Se tudo estiver correto, as mensagens deste tópico aparecerão logo abaixo<br>
+        <br>Como demonstrado a seguir:<br>
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/esp_1.png">
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_2.png">
         </figure>        
       </p>
       <h3>Passo 03</h3>
       <p>
-        Agora vamos, por fim, indexar nossa "coisa" e nossa conta AWS ao nosso ESP-32<br> 
-        Ainda no IoT Core, no site da AWS, acesse <strong>"Gerenciar"> "Coisas"</strong>, e copie o nome da "coisa" que foi criada anteriormente. Cole este nome no lugar de <strong> Coisa-Teste </strong>. <br>
+        Agora vamos, enviar informações para o ESP, por meio de MQTT<br> 
+        Ainda na mesma aba, selecione <strong>"Publicar um tópico"</strong>, e cole o tópico de publicação. Neste caso, utilizarei o tópico <strong> esp32/sub </strong>, para demonstrar que a conexão está ativa. <br>
         Como na figura abaixo:
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/esp_2.png">
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_3.png">
         </figure>
         <br>Além disso, iremos precisar do <strong> End Point do AWS</strong> <br>
         <br> Para encontra-lo basta selecionar <strong>"Iot Core">"Configurações"</strong> e copie o <strong> "End Point" </strong><br>
