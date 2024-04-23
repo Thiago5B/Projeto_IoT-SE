@@ -37,12 +37,12 @@
         <figure>
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_5.png">
         </figure> 
-       Nesta nova aba, dê um nome para sua tabela e selecione <strong>"Partcionamento personalizado">"Nome da medida" e não selecione "Impor chave de partição no registro"</strong><br>
+       <br>Nesta nova aba, dê um nome para sua tabela e selecione <strong>"Partcionamento personalizado">"Nome da medida" e não selecione "Impor chave de partição no registro"</strong><br>
         <br>Como demonstrado a seguir:<br>
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_6.png">
         </figure>
-        <br>Por fim, em <strong>"Retenção de dados"</strong> deixe como na seguinte imagem e desselecione <strong>"habilitar gravações de armazenamento magnético</strong> e crie a tabela.
+        <br>Por fim, em <strong>"Retenção de dados"</strong> deixe como na seguinte imagem e desselecione <strong>"habilitar gravações de armazenamento magnético</strong> e crie a tabela.<br>
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_7.png">
         </figure>
