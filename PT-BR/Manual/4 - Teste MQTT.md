@@ -41,28 +41,21 @@
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_3.png">
         </figure>
-        <br>Além disso, iremos precisar do <strong> End Point do AWS</strong> <br>
-        <br> Para encontra-lo basta selecionar <strong>"Iot Core">"Configurações"</strong> e copie o <strong> "End Point" </strong><br>
+        <br>Voltemos a  <strong> Arduino IDE</strong> e selecionemos o <strong>monitor serial</strong>. <br>
+        <br> É possível observar a mensagem publicada, como na imagem a seguir:<br>
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/esp_3.png">
-        </figure>
-        <br>Cole no end point, como demonstrado na figura:<br>
-         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/esp_4.png">
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_4.png">
         </figure>
       </p>
       <h3>Passo 04</h3>
       <p>
-        Agora vamos pegar os certificados baixados e adiciona-los ao código.
-        <br><strong> Abra o local de Dowload dos certificados e abra com um leitor de texto desejado</strong><br>
-        <strong> Cole em como mostrado na figura a baixo, repita para os demais certificados, mantendo a seguinte ordem: </strong> <br>
+        Agora para realizar o acionamento, do portão, basta trocar o tópico de publicação para <strong>led/sub</strong>.
+        <br><strong> Para abrir o portão, apague todo o payload e envie "0".<br> Para fechar o portão, envie "1"</strong>.<br>
+        <strong> O monitor serial deve ajuda-lo a entender o que está acontecendo, ele é seu melhor amigo </strong> <br>
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/esp_5.png">
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_5.png">
         </figure>
-        <strong>1- Amazon Root CA 1</strong><br>
-        <strong>2- Certificado do dispositivo</strong><br>
-        <strong>3- Chave privada do dispositivo</strong><br>
-     Com isso nosso ESP 32 está pareado com a AWS via MQTT e TLS.        
+     Com isso nosso ESP 32 está pareado com a AWS via MQTT e TLS e agora responde a nossas mensagens.        
       </p>
     </article>
     <h3>Siga para o arquivo <a href=""><strong> da próxima seção</a></strong> do manual</h3>
