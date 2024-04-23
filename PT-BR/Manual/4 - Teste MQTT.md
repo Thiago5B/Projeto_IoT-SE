@@ -54,7 +54,7 @@
         <strong> O monitor serial deve ajuda-lo a entender o que está acontecendo, ele é seu melhor amigo </strong> <br>
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_5.png">
-        </figure>
+        </figure><br>
      Com isso nosso ESP 32 está pareado com a AWS via MQTT e TLS e agora responde a nossas mensagens.        
       </p>
     </article>
