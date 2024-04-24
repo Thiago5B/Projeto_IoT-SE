@@ -67,12 +67,16 @@
         Agora para defineremos as ações, o que acontece com os dados.
         <br> Em <strong>"Ação 1"</strong> selecione <strong>"Timestream table"</strong>.
         <br>Selecione em seguida o banco de dados criado anteriormente junto com a respectiva tabela.
-        <br><strong> Em dimensões, é possível adicionar colunas de sua preferencia e o valor delas.<br> Para fechar o portão, envie "0"</strong>.<br>
-        <strong> O monitor serial deve ajuda-lo a entender o que está acontecendo, ele é seu melhor amigo </strong> <br>
+        <br><strong> Em dimensões, é possível adicionar colunas de sua preferencia e o valor delas.<br> Em caso de variáveis utilize ${nome_da_variável}</strong>.<br>
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_5.png">
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_10.png">
         </figure><br>
-     Com isso nosso ESP 32 está pareado com a AWS via MQTT e TLS e agora responde a nossas mensagens.        
+        <strong> Além disso podemos adicionar o carimbo de hora, para tal, utilizaremos a configuração da figura a seguir. </strong> <br>
+        <br> Por fim, é necessário criar uma função IAM, para tal, clique em <strong>"Criar nova função"</strong> e renomei-a como desejar.<br>
+        <figure>
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_11.png">
+        </figure><br>
+     Avance e revise se todas as informações estão de acordo. Por fim, crie a Regra.        
       </p>
     </article>
     <h3>Siga para o arquivo <a href=""><strong> da próxima seção</a></strong> do manual</h3>
