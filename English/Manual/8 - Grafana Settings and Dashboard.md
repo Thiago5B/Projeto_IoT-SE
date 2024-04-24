@@ -34,7 +34,7 @@
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_1.png">
         </figure
         <br><br><br>
-        Then, click on the <strong>Add panel</strong> button, on the top right part of the window. After the panel is added, click on the top right corner and open it's menu, where it is possible to configure it's apearance, function and more, all using the coding space on the center-bottom of the page. The settings and code for each kind of panel can be found on the <a href="https://github.com/Thiago5B/Projeto_IoT-SE/main/blob/English/Manual/References.md"> References </a> page.
+        Then, click on the <strong>Add panel</strong> button, on the top right part of the window. After the panel is added, click on the top right corner and open it's menu, where it is possible to configure it's apearance, function and more, all using the coding space on the center-bottom of the page. The settings and code for each kind of panel can be found on the <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/English/References.md"> References </a> page.
       </p>
     </article>
   </section>
