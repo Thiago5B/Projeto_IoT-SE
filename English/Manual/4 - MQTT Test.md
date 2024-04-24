@@ -57,7 +57,7 @@
      With this our ESP 32 is paired with AWS via MQTT and TLS and now responds to our messages.        
       </p>
     </article>
-    <h3>Follow the file <a href=""><strong> of the next section</a></strong> of the manual</h3>
+    <h3>Follow the file <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/English/Manual/5%20-%20Timestream%20Settings.md"><strong> of the next section</a></strong> of the manual</h3>
   </section>
 </main>
 </body>
