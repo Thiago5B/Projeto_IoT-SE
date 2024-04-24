@@ -60,7 +60,7 @@
       With that done, we have our first "Thing" created. We are ready to program our ESP32      
       </p>
     </article>
-    <h3>Follow the file of the<a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/English/Manual/3%20-%20Implementa%C3%A7%C3%A3o%20no%20ESP32.md"><strong> next section</a></strong> of the manual</h3>
+    <h3>Follow the file of the<a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/English/Manual/3%20-%20Implementation%20on%20ESP32.md"><strong> next section</a></strong> of the manual</h3>
   </section>
 </main>
 </body>
