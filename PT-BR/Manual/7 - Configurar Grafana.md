@@ -5,25 +5,26 @@
 </head>
 <body>
 <header>
-  <h1>Configurando um Banco de Dados</h1>
+  <h1>Preparando o Grafana</h1>
 </header>
 <main>
   <section>
-    <h2>Timestream Data Base</h2>
     <article>
       <h3>Passo 01</h3>
       <p>
-       Pesquise por <strong>"Timestream"</strong> e selecione como demonstrado na figura abaixo.<br>
+       Pesquise por <strong>"Grafana"</strong> e selecione como demonstrado na figura abaixo.<br>
         <figure>
-          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_1.png">
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_1.png">
         </figure>
-        <br>Nesta nova aba, selecione <strong>"Recursos">"Banco de dados"</strong>, como demonstrado na figura a seguir.
+        <br>Nesta nova aba, selecione <strong>"Criar espaço de trabalho"</strong>.
+        <br>Após isso, nomeie o espaço de trabalho e clique <strong>"Próximo"</strong>.
         <figure>
-          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_2.png">
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_2.png">
         </figure>
-        <br>Clique em <strong>"Criar banco de dados"</strong> e nomeie seu banco de dados<br>
+        <br>Em <strong>"Métodos de autenticação" </strong>clique em <strong>"AWS IAM Identity Center"</strong> e em <strong>"Tipo de permissão"</strong>, selecione <strong>"Gerenciado pelo serviço"</strong>.
+        <br><strong>EM OPÇÕES DE CONFIGURAÇÃO DO ESPAÇO DO TRABALHO SELECIONE "ATIVAR O GERENCIAMENTO DE PLUG-IN"</strong>.
         <figure>
-          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_3.png">
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_3.png">
         </figure>
         <figure>
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_4.png">
