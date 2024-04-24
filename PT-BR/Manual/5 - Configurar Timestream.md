@@ -79,7 +79,7 @@
      Proceed and review if all information is correct. Finally, create the Rule.        
       </p>
     </article>
-    <h3>Go to the file <a href=""><strong> of the next section</a></strong> of the manual</h3>
+    <h3>Go to the file <a href="https://github.com/Thiago5B/Projeto_IoT-SE/edit/main/PT-BR/Manual/6%20-%20Testando%20Timestream.md"><strong> of the next section</a></strong> of the manual</h3>
   </section>
 </main>
 </body>
