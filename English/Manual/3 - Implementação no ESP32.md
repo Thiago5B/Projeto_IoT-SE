@@ -14,7 +14,7 @@
     <article>
       <h3>Step 01</h3>
       <p>
-        Access and download the  <strong>"Main.ino" and "secrets.h"</strong> files.
+        Access and download the  <strong><a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/Main.ino">"Main.ino"</a> and <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/secrets.h">"secrets.h"</a></strong> files.
         Make sure you have chosen the ESP 32 board and port, on the <strong>"Arduino IDE"</strong>. In case of doubt <a href="https://www.youtube.com/watch?v=ROkhP5oWRUU"> click here to ler how to configure the <strong>Arduino IDE</strong> for the ESP 32 </a>. <br>
       </p>
     </article>
