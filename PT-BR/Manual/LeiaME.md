@@ -6,8 +6,8 @@
   2- Configurar "Coisa" <br>
   3- Implementação no ESP32 <br>
   4- Teste MQTT <br>
-  5- Configurar StreamDataBase <br>
-  6- Teste StreamDataBase <br>
+  5- Configurar Timestream <br>
+  6- Teste Timestream <br>
   7- Configurar Grafana <br>
   8- Criando Dashboard <br>
 </html>
