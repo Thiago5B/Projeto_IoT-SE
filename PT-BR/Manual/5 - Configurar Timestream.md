@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 </head>
 <body>
 <header>
-  <h1>Setting Up a Database</h1>
+  <h1>Configurando um Banco de Dados</h1>
 </header>
 <main>
   <section>
-    <h2>Timestream Database</h2>
+    <h2>Banco de Dados Timestream</h2>
     <article>
-      <h3>Step 01</h3>
+      <h3>Passo 01</h3>
       <p>
-       Search for <strong>"Timestream"</strong> and select it as shown in the figure below.<br>
+       Procure por <strong>"Timestream"</strong> e selecione-o como mostrado na figura abaixo.<br>
         <figure>
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_1.png">
         </figure>
-        <br>In this new tab, select <strong>"Resources">"Databases"</strong>, as shown in the following figure.
+        <br>Nesta nova aba, selecione <strong>"Recursos">"Bancos de Dados"</strong>, como mostrado na figura a seguir.
         <figure>
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_2.png">
         </figure>
-        <br>Click on <strong>"Create database"</strong> and name your database<br>
+        <br>Clique em <strong>"Criar banco de dados"</strong> e dê um nome ao seu banco de dados<br>
         <figure>
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_3.png">
         </figure>
@@ -31,55 +31,55 @@
       </p>
     </article>
     <article>
-      <h3>Step 02</h3>
+      <h3>Passo 02</h3>
       <p>
-       <br>With the database created, access it and select the tab <strong>"Tables">"Create table"</strong><br>
+       <br>Com o banco de dados criado, acesse-o e selecione a aba <strong>"Tabelas">"Criar tabela"</strong><br>
         <figure>
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_5.png">
         </figure> 
-       <br>In this new tab, give your table a name and select <strong>"Custom partitioning">"Measure name" and do not select "Enforce partition key on record"</strong><br>
-        <br>As shown below:<br>
+       <br>Nesta nova aba, dê um nome à sua tabela e selecione <strong>"Particionamento personalizado">"Nome da medida" e não selecione "Impor chave de partição no registro"</strong><br>
+        <br>Como mostrado abaixo:<br>
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_6.png">
         </figure>
-        <br>Finally, in <strong>"Data retention"</strong> leave it as in the following image and deselect <strong>"enable magnetic storage writes"</strong> and create the table.<br>
+        <br>Por fim, em <strong>"Retenção de dados"</strong> deixe como na imagem a seguir e desmarque <strong>"habilitar gravações de armazenamento magnético"</strong> e crie a tabela.<br>
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_7.png">
         </figure>
       </p>
-      <h3>Step 03</h3>
+      <h3>Passo 03</h3>
       <p>
-        Now let's go back to <strong>"IoT CORE"</strong>, to create a rule between the received data and the database<br> 
-        Select <strong>"Manage" > "Message Routing" > "Rules"</strong>, and paste the publication topic. In this case, I will use the topic <strong> esp32/sub </strong>, to demonstrate that the connection is active. <br>
-        As in the figure below:
+        Agora vamos voltar ao <strong>"IoT CORE"</strong>, para criar uma regra entre os dados recebidos e o banco de dados<br> 
+        Selecione <strong>"Gerenciar" > "Roteamento de Mensagens" > "Regras"</strong>. <br>
+        Como na figura abaixo:
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_8.png">
         </figure>
-        <br>Name the rule as you prefer and click on <strong> "Next"</strong> 
-        <br> In the <strong>"SQL Statement"</strong> we will replace the <strong>"ATTRIBUTE" with "*" </strong> and as the topic we will put the esp's publication topic, that is, <strong>"esp32/pub"</strong>, deleting the rest.<br>
-        <br>As in the following image:<br>
+        <br>Nomeie a regra como preferir e clique em <strong> "Próximo"</strong> 
+        <br> Em <strong>"Instrução SQL"</strong> iremos substituir o <strong>"ATTRIBUTE" por "*" </strong> e como tópico colocaremos o tópico de publicação do esp, ou seja, <strong>"esp32/pub"</strong>, apagando o restante.<br>
+        <br>Como na imagem a seguir:<br>
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_9.png">
         </figure>
       </p>
-      <h3>Step 04</h3>
+      <h3>Passo 04</h3>
       <p>
-        Now we will define the actions, what happens with the data.
-        <br> In <strong>"Action 1"</strong> select <strong>"Timestream table"</strong>.
-        <br>Then select the previously created database along with the respective table.
-        <br><strong> In dimensions, you can add columns of your preference and their value.<br> In case of variables use ${variable_name}</strong>.<br>
+        Agora vamos definir as ações, o que acontece com os dados.
+        <br> Em <strong>"Ação 1"</strong> selecione <strong>"Tabela Timestream"</strong>.
+        <br>Em seguida, selecione o banco de dados criado anteriormente junto com a respectiva tabela.
+        <br><strong> Em dimensões, você pode adicionar colunas de sua preferência e seu valor.<br> Em caso de variáveis use ${nome_da_variavel}</strong>.<br>
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_10.png">
         </figure><br>
-        <strong> We can also add the timestamp, for that, we will use the configuration in the following figure. </strong> <br>
-        <br> Finally, it is necessary to create an IAM role, to do so, click on <strong>"Create a new role"</strong> and rename it as you wish.<br>
+        <strong> Também podemos adicionar o timestamp, para isso, usaremos a configuração na figura a seguir. </strong> <br>
+        <br> Por fim, é necessário criar uma função IAM, para isso, clique em <strong>"Criar uma nova função"</strong> e renomeie-a como desejar.<br>
         <figure>
         <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_11.png">
         </figure><br>
-     Proceed and review if all information is correct. Finally, create the Rule.        
+     Prossiga e revise se todas as informações estão corretas. Por fim, crie a Regra.        
       </p>
     </article>
-    <h3>Go to the file <a href="https://github.com/Thiago5B/Projeto_IoT-SE/edit/main/PT-BR/Manual/6%20-%20Testando%20Timestream.md"><strong> of the next section</a></strong> of the manual</h3>
+    <h3>Siga para o arquivo <a href="https://github.com/Thiago5B/Projeto_IoT-SE/edit/main/PT-BR/Manual/6%20-%20Testando%20Timestream.md"><strong> da próxima seção</a></strong> do manual</h3>
   </section>
 </main>
 </body>
