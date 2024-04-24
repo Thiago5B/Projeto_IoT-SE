@@ -1,63 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 </head>
 <body>
 <header>
-  <h1>Testing the Connection</h1>
+  <h1>Setting Up a Database</h1>
 </header>
 <main>
   <section>
-    <h2>MQTT IoT CORE</h2>
+    <h2>Timestream Database</h2>
     <article>
       <h3>Step 01</h3>
       <p>
-       Open the code in Arduino IDE and copy the <strong>message publication topic</strong> and select as shown in the figure below.<br>
+       Search for <strong>"Timestream"</strong> and select it as shown in the figure below.<br>
         <figure>
-          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_1.png">
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_1.png">
         </figure>
-        <br>In this case, our subscription topic is <strong>esp32/pub</strong>, because the ESP publishes this message, and AWS subscribes to it.
-        <br>Access the <strong>"IoT CORE"</strong> again and select  <strong>"Test"> "MQTT Client"</strong>.<br>
-        Make sure the ESP 32 board is powered on and the red LED is on.<br>
+        <br>In this new tab, select <strong>"Resources">"Databases"</strong>, as shown in the following figure.
+        <figure>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_2.png">
+        </figure>
+        <br>Click on <strong>"Create database"</strong> and give your database a name<br>
+        <figure>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_3.png">
+        </figure>
+        <figure>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_4.png">
+        </figure>
       </p>
     </article>
     <article>
       <h3>Step 02</h3>
       <p>
-       <strong>Paste the topic name in the "Subscribe to a topic" tab and click "Subscribe"</strong>. <br>
-        If everything is correct, the messages from this topic will appear below<br>
-        <br>As demonstrated below:<br>
+       <br>With the database created, access it and select the tab <strong>"Tables">"Create table"</strong><br>
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_2.png">
-        </figure>        
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_5.png">
+        </figure> 
+       <br>In this new tab, give your table a name and select <strong>"Custom partitioning">"Measure name" and do not select "Enforce partition key on record"</strong><br>
+        <br>As shown below:<br>
+        <figure>
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_6.png">
+        </figure>
+        <br>Finally, in <strong>"Data retention"</strong> leave it as in the following image and uncheck <strong>"enable magnetic storage writes"</strong> and create the table.<br>
+        <figure>
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_7.png">
+        </figure>
       </p>
       <h3>Step 03</h3>
       <p>
-        Now let's send information to the ESP, through MQTT<br> 
-        Still in the same tab, select <strong>"Publish to a topic"</strong>, and paste the publication topic. In this case, we will use the topic <strong> esp32/sub </strong>, to demonstrate that the connection is active. <br>
+        Now let's go back to <strong>"IoT CORE"</strong>, to create a rule between the received data and the database<br> 
+        Select <strong>"Manage" > "Message Routing" > "Rules"</strong>. <br>
         As in the figure below:
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_3.png">
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_8.png">
         </figure>
-        <br>Let's go back to  <strong> Arduino IDE</strong> and select the <strong>serial monitor</strong>. <br>
-        <br> It is possible to observe the published message, as in the following image:<br>
+        <br>Name the rule as you like and click on <strong> "Next"</strong> 
+        <br> In <strong>"SQL Statement"</strong> we will replace the <strong>"ATTRIBUTE" with "*" </strong> and as the topic we will put the esp's publication topic, that is, <strong>"esp32/pub"</strong>, deleting the rest.<br>
+        <br>As in the following image:<br>
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_4.png">
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_9.png">
         </figure>
       </p>
       <h3>Step 04</h3>
       <p>
-        Now to activate the gate, just change the publication topic to </strong>led/sub</strong>.
-        <br><strong> To open the gate, erase all payload and send "1".<br> To close the gate, send "0"</strong>.<br>
-        <strong> The serial monitor should help you understand what is happening, it is your best friend </strong> <br>
+        Now let's define the actions, what happens to the data.
+        <br> In <strong>"Action 1"</strong> select <strong>"Timestream Table"</strong>.
+        <br>Then, select the previously created database along with the respective table.
+        <br><strong> In dimensions, you can add columns of your choice and their value.<br> In case of variables use ${variable_name}</strong>.<br>
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/mqtt_5.png">
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_10.png">
         </figure><br>
-     With this, our ESP 32 is paired with AWS via MQTT and TLS and now responds to our messages.        
+        <strong> We can also add the timestamp, for that, we will use the configuration in the following figure. </strong> <br>
+        <br> Finally, it is necessary to create an IAM role, for that, click on <strong>"Create a new role"</strong> and rename it as you wish.<br>
+        <figure>
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_11.png">
+        </figure><br>
+     Proceed and review if all information is correct. Finally, create the Rule.        
       </p>
     </article>
-    <h3>Follow the <strong><a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/English/Manual/6%20-%20Timestream%20testing.md">link to the next section</strong></a> of the manual</h3> 
+    <h3>Proceed to the file <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/English/Manual/6%20-%20Timestream%20testing.md"><strong> of the next section</a></strong> of the manual</h3>
   </section>
 </main>
 </body>
