@@ -28,6 +28,7 @@
       <p>
        <br>Observe se na parte infgerior a <strong>"Query"</strong> existe o <strong> Status de "Sucess"</strong>.
         <br>Em caso de afirmativo, então a conexão foi estabelecida de forma correta.
+        <br>Em caso de negativo, confira <a href="https://youtu.be/z8T4hAERuOg?t=625"> o seguinte vídeo e note se faltou algo</a>.
         <figure>
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_13.png">
         </figure> 
