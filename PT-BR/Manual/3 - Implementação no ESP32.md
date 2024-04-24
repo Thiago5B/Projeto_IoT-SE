@@ -14,7 +14,7 @@
     <article>
       <h3>Passo 01</h3>
       <p>
-        Acesse e realize o download dos arquivos <strong>"Main.ino" e "secrets.h"</strong>.<br>
+        Acesse e realize o download dos arquivos <strong><a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/Main.ino">"Main.ino"</a> e <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/secrets.h">"secrets.h"</a></strong>.<br>
         Garanta que você selecionou a placa ESP 32 e a porta, na plataforma <strong>"Arduino IDE" </strong>. Em caso de dúvida <a href="https://www.youtube.com/watch?v=ROkhP5oWRUU"> clique aqui para aprender a configurar a <strong>Arduino IDE</strong> para o ESP 32</a> <br>
       </p>
     </article>
