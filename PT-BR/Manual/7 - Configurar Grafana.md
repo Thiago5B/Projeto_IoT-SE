@@ -27,61 +27,87 @@
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_3.png">
         </figure>
         <figure>
-          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_4.png">
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_4.png">
+        </figure>
+        <br>Mantenha as configurações originais, como demonstrado na figura, e clique em <strong>"Próximo"</strong>.
+        <figure>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_5.png">
         </figure>
       </p>
     </article>
     <article>
       <h3>Passo 02</h3>
       <p>
-       <br>Com o banco de dados criado, acesse-o e selecione a aba <strong>"Tablelas">"Criar tabela"</strong><br>
+       <br>Agora selecione o tipo de fonte de dados como sendo <strong>"Amazon TimeStream" e avance.</strong><br>
         <figure>
-          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_5.png">
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_6.png">
         </figure> 
-       <br>Nesta nova aba, dê um nome para sua tabela e selecione <strong>"Partcionamento personalizado">"Nome da medida" e não selecione "Impor chave de partição no registro"</strong><br>
-        <br>Como demonstrado a seguir:<br>
-        <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_6.png">
-        </figure>
-        <br>Por fim, em <strong>"Retenção de dados"</strong> deixe como na seguinte imagem e desselecione <strong>"habilitar gravações de armazenamento magnético</strong> e crie a tabela.<br>
-        <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_7.png">
-        </figure>
       </p>
+       <br>Revise se todas as informações estão de acordo. Crie o espaço de trabalho.<br>
+      <strong>É normal que após confirmar a criação do espaço de trabalho leve um tempo de 5-10 minutos para a criação do mesmo.</strong>
+      </p>
+    </article>
+    <article>
       <h3>Passo 03</h3>
       <p>
-        Agora vamos voltar ao <strong>"IoT CORE"</strong>, para criar uma regra, entre os dados recebidos e o banco de dados<br> 
-        Selecione <strong>"Gerenciar" > "Roteamento de mensagens" > "Regras"</strong>, e cole o tópico de publicação. Neste caso, utilizarei o tópico <strong> esp32/sub </strong>, para demonstrar que a conexão está ativa. <br>
-        Como na figura abaixo:
+       <br>Na barra de pesquisa procure e acesse <strong>"IAM Identity Center"</strong>.<br>
+        Neste novo menu acesse <strong>"Usuários"</strong> e clique em <strong>"Adicionar usuário"</strong><br>
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_8.png">
-        </figure>
-        <br>Nomeie a regra como preferir e  clique em <strong> "Próxima"</strong> 
-        <br> Na <strong>"Instrução SQL"</strong> substituiremos o <strong>"ATRIBUTE" por "*" </strong> e como tópico colocaremos o tópico de publicação do esp, ou seja, <strong>"esp32/pub"</strong>, apagando o restante.<br>
-        <br>Como na imagem a seguir:<br>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_9.png">
+        </figure> 
+        <br>Dê um nome de usuário <strong>, mas atenção, este não pode ser modificado!</strong>, e preencha os demais dados como um cadastro comum.
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_9.png">
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_10.png">
+        </figure> 
+        <br> Todas as informações opcionais não serão tratadas aqui. Uma vez completado o cadastro, clique em <strong>"Próximo</strong>.
+        <br> Na próxima aba, clique em <strong>"Próximo"</strong>, a criação de grupos é opcional.
+        <br> Por fim, revise as informações e clique em <strong>"Adicionar usuário"</strong>.
+        <figure>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_11.png">
         </figure>
       </p>
       <h3>Passo 04</h3>
       <p>
-        Agora para defineremos as ações, o que acontece com os dados.
-        <br> Em <strong>"Ação 1"</strong> selecione <strong>"Timestream table"</strong>.
-        <br>Selecione em seguida o banco de dados criado anteriormente junto com a respectiva tabela.
-        <br><strong> Em dimensões, é possível adicionar colunas de sua preferencia e o valor delas.<br> Em caso de variáveis utilize ${nome_da_variável}</strong>.<br>
+       <br>Assim que criado, retorne ao <strong>"Amazon Grafana"</strong>.
+        <br>Selecione sobre o nome do espaço de trabalho criado.
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_10.png">
-        </figure><br>
-        <strong> Além disso podemos adicionar o carimbo de hora, para tal, utilizaremos a configuração da figura a seguir. </strong> <br>
-        <br> Por fim, é necessário criar uma função IAM, para tal, clique em <strong>"Criar nova função"</strong> e renomei-a como desejar.<br>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_7.png">
+        </figure> 
+        <br>Na nova aba selecione <strong>"Autenticação" > "AWS IAM Identity Center" > "Atribuir novo usário ou grupo"</strong>
         <figure>
-        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/db_11.png">
-        </figure><br>
-     Avance e revise se todas as informações estão de acordo. Por fim, crie a Regra.        
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_8.png">
+        </figure> 
+        <br>Selecione o usuário anteriormente criado e clique em <strong>"Adicionar usuário"</strong>.
+        <br>
+       <br>Na nova aba aberta, selecione novamente o usuário, clique em <strong>"Ação"</strong> e <strong>"Tornar administrador"</strong>.<br>
+      <figure>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_14.png">
+        </figure>
+      <figure>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_15.png">
+        </figure>
       </p>
     </article>
-    <h3>Siga para o arquivo <a href=""><strong> da próxima seção</a></strong> do manual</h3>
+    <h3>Passo 05</h3>
+    <p>
+      <br>Agora para abrir o painel do grafana, clique na <strong>"URL do espaço de trabalho do Grafana"</strong>.
+      <br>Acesse o e-mail cadastrado e realize a validação do e-mail. Após isso, também será possível criar uma senha de acesso.<br>
+      Realize o login com o nome de usuário e senha pelo usuário.
+      <br> <strong>É importante ressaltar que para acessar o Grafana, o e-mail deve obrigatóriamente ser confirmado</strong>.
+      <figure>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_16.png">
+        </figure>
+    </p>
+      <h3>Passo 06</h3>
+    <p>
+      <br>Agora já dentro do painel de administrador do Grafana, clique no menu lateral superior esquerdo e em seguida <strong>"Administration" > Plugins"</strong>.
+      <figure>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_17.png">
+        </figure>
+      <br>Selecione e instale o plugin <strong>"Amazon Timestream"</strong>.<br>
+    </p>
   </section>
+  <h3>Siga para o arquivo <a href=""><strong> da próxima seção</a></strong> do manual</h3>
 </main>
 </body>
 </html>
