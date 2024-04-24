@@ -17,12 +17,12 @@
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_1.png">
         </figure>
         <br>Nesta nova aba, selecione <strong>"Criar espaço de trabalho"</strong>.
-        <br>Após isso, nomeie o espaço de trabalho e clique <strong>"Próximo"</strong>.
+        <br>Após isso, nomeie o espaço de trabalho e clique <strong>"Próximo"</strong>.<br>
         <figure>
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_2.png">
         </figure>
         <br>Em <strong>"Métodos de autenticação" </strong>clique em <strong>"AWS IAM Identity Center"</strong> e em <strong>"Tipo de permissão"</strong>, selecione <strong>"Gerenciado pelo serviço"</strong>.
-        <br><strong>EM OPÇÕES DE CONFIGURAÇÃO DO ESPAÇO DO TRABALHO SELECIONE "ATIVAR O GERENCIAMENTO DE PLUG-IN"</strong>.
+        <br><strong>EM OPÇÕES DE CONFIGURAÇÃO DO ESPAÇO DO TRABALHO SELECIONE "ATIVAR O GERENCIAMENTO DE PLUG-IN"</strong>.<br>
         <figure>
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_3.png">
         </figure>
