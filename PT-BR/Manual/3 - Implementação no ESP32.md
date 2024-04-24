@@ -60,6 +60,13 @@
         <strong>3- Chave privada do dispositivo</strong><br>
      Com isso nosso ESP 32 está pareado com a AWS via MQTT e TLS.        
       </p>
+      <h3>Passo 05</h3>
+      <p>
+        Segue a implementação física do projeto, com o ESP32, um motor DC, uma ponte H (TB6612FNG) e o sensor ultrassônico (HCSR04) <br>
+        <figure>
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/circ.jpg">
+        </figure>       
+      </p>
     </article>
     <h3>Siga para o arquivo <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/4%20-%20Teste%20MQTT.md"><strong> da próxima seção</a></strong> do manual</h3>
   </section>
