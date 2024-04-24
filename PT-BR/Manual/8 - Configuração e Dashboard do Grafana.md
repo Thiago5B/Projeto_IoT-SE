@@ -42,7 +42,7 @@
         <figure>
            <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/grafana_6.jpg">
         </figure>
-        <br><br>As configurações e o código para cada tipo de painel podem ser encontrados na página <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/English/References.md"> Referências </a>.
+        <br><br>As configurações e o código para cada tipo de painel podem ser encontrados na página <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Referencias.md"> Referências </a>.
       </p>
     </article>
   </section>
