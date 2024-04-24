@@ -79,7 +79,7 @@
      Prossiga e revise se todas as informações estão corretas. Por fim, crie a Regra.        
       </p>
     </article>
-    <h3>Siga para o arquivo <a href="https://github.com/Thiago5B/Projeto_IoT-SE/edit/main/PT-BR/Manual/6%20-%20Testando%20Timestream.md"><strong> da próxima seção</a></strong> do manual</h3>
+    <h3>Siga para o arquivo <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/6%20-%20Testando%20Timestream.md"><strong> da próxima seção</a></strong> do manual</h3>
   </section>
 </main>
 </body>
