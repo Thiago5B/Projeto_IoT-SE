@@ -110,7 +110,7 @@
         </figure>
     </p>
   </section>
-  <h3>Proceed to the file <a href=""><strong> of the next section</a></strong> of the manual</h3>
+  <h3>Proceed to the file <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/English/Manual/8%20-%20Grafana%20Settings%20and%20Dashboard.md"><strong> of the next section</a></strong> of the manual</h3>
 </main>
 </body>
 </html>
