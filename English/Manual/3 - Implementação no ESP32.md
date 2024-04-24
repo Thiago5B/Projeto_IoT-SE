@@ -6,65 +6,63 @@
 </head>
 <body>
 <header>
-  <h1>IoT Core</h1>
+  <h1>ESP32</h1>
 </header>
 <main>
   <section>
-    <h2>Criando coisa</h2>
+    <h2>Implementing</h2>
     <article>
-      <h3>Passo 01</h3>
+      <h3>Step 01</h3>
       <p>
-        Ao acessar o IoT CORE, é possível observar na parte esquerda, um menu horizontal com diversas opções.<br>
-        Por hora, vamos para a aba <strong>"GERENCIAR" > "Todos os dispositivos" > "Coisas"</strong> , como demonstrado na seguinte figura.
-        <figure>
-        <img src="">
-      </figure>
-        <br> Nesta tela é possível observar todas as "Coisas" criadas.
+        Access and download the  <strong>"Main.ino" and "secrets.h"</strong> files.
+        Make sure you have chosen the ESP 32 board and port, on the <strong>"Arduino IDE"</strong>. In case of doubt <a href="https://www.youtube.com/watch?v=ROkhP5oWRUU"> click here to ler how to configure the <strong>Arduino IDE</strong> for the ESP 32 </a>. <br>
       </p>
     </article>
     <article>
-      <h3>Passo 02</h3>
+      <h3>Step 02</h3>
       <p>
-        Vamos criar nossa primeira "Coisa". <br>
-        Para isso, clique em <strong>"Criar Itens"</strong>. Neste caso será criado apenas uma "Coisa" então, selecione a opção <strong>"Criar um único item" > "Próximo"</strong> <br>
-        Após isso, é possível nomear e detalhar as propriedades da "Coisa", deixaremos tudo como está, seguindo a figura.
+       <strong>Let edit the code in order to adapt it to your AWS account and your "thing".</strong> <br>
+        To do this, when already on the <strong>"Arduino IDE"</strong>, click on <strong>"secrets.h"</strong>.
+        <br>Lets first change the wifi network to be used by the microcontroller.<br>
+        To do so, substitute <strong>5BOLA-FUNDO </strong> for your wifi network name and also <strong>5bola2008_</strong> for your wifi network password, such as seen on the picture below.
         <figure>
-        <img src="">
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/esp_1.png">
+        </figure>        
+      </p>
+      <h3>Step 03</h3>
+      <p>
+        Now, let's finally index our "thing" and our AWS account to our ESP-32<br> 
+        Still in IoT Core, on the AWS Website, access <strong>"Manage">"Things"</strong>, and copy the name of the "thing" that was created before. Paste this name in place of <strong> Coisa-Teste </strong> <br>
+        As seen on the picture below
+        <figure>
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/esp_2.png">
+        </figure>
+        <br>Besides that, we need the <strong>AWS End Point</strong> <br>
+        <br> To find it, just select <strong>"Iot Core">"Settings"</strong> and copy the <strong>"End Point"</strong><br>.
+        <figure>
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/esp_3.png">
+        </figure>
+        <br>Paste it on the end point, as seen on the picture:<br>
+         <figure>
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/esp_4.png">
         </figure>
       </p>
+      <h3>Step 04</h3>
       <p>
-        <strong>A seguir, manteremos as configurações como recomendadas</strong>
+        Now let's add the donwloaded certificates into the code.
+        <br><strong>Open the downloaded certificates file and open a text reader app of your choice</strong><br>
+        <strong> Paste as shown on the picture below and repete for the remaining certificates, mantaining the following order: </strong> <br>
         <figure>
-        <img src="">
+        <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/esp_5.png">
         </figure>
-      </p>
-      <h3>Passo 03</h3>
-      <p>
-        Agora precisaremos criar uma <strong>"Política"</strong>, isso faz com que o nosso dispostivo tenha acesso a recursos IoT. Selecione <strong> "Criar Política" </strong>. <br>
-        <figure>
-        <img src="">
-        </figure>
-        <br>Na nova página, crie um nome para a nova política e também selecione <br>
-        <strong> "Efeito de política" > "Permetir"</strong><br>
-        Já em ação de política você deve colocar : IoT:Connect, IoT:Publish, IoT:Recive e Iot:Subscribe.
-        <strong> "Recurso da política" deve ser preenchido com "*" </strong> <br>
-        Como demonstra a foto a seguir
-        <img src="">
-      </p>
-      <h3>Passo 04</h3>
-      <p>
-        Agora voltando para a aba de seleção de políticas e certificados, selecione a nova política recem criada.</br><br><strong> Por fim, clique em "Criar Item"</strong><br>
-        <strong> FAÇA O DOWNLOAD DE TODOS OS SEGUINTES CERTIFICADOS E RENOMEIE CADA UM PARA FACILITAR NOS PRÓXIMOS PASSOS</strong>, uma vez que não existe outro momento em que estes são disponibilizados.<br>
-        Caso os perca, é necessário retornar ao "Passo 01" desta mesma página e refazer todo o processo. <br>
-      <figure><img src="">
-      <img src=""></figure><br>
-      Com isso podemos dizer que temos nossa primeira "coisa" criada. Estamos prontos para programar nosso ESP32.        
+        <strong>1- Amazon Root CA 1</strong><br>
+        <strong>2- Device certificate</strong><br>
+        <strong>3- Device private key</strong><br>
+     With that, our ESP 32 is already connected to the AWS by MQTT and TLS.        
       </p>
     </article>
-    <h3>Siga para o arquivo <a href=""><strong> da próxima seção</a></strong> do manual</h3>
+    <h3>Jump to the <a href=""><strong>next section</a></strong> of the manual</h3>
   </section>
 </main>
 </body>
 </html>
-
-
