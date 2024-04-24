@@ -61,7 +61,7 @@
      With that, our ESP 32 is already connected to the AWS by MQTT and TLS.        
       </p>
     </article>
-    <h3>Jump to the <a href=""><strong>next section</a></strong> of the manual</h3>
+    <h3>Jump to the <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/English/Manual/4%20-%20MQTT%20Test.md"><strong>next section</a></strong> of the manual</h3>
   </section>
 </main>
 </body>
