@@ -33,7 +33,7 @@
         </figure> 
       </p>
     </article>
-    <h3>Proceed to the file <a href=""><strong> of the next section</strong></a> of the manual</h3>
+    <h3>Proceed to the file <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/English/Manual/7%20-%20Timestream-Grafana%20Connection.md"><strong> of the next section</strong></a> of the manual</h3>
   </section>
 </main>
 </body>
