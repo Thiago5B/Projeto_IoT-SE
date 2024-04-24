@@ -17,6 +17,7 @@
       - Set Up an Amazon Managed Service for Grafana Dashboard with CloudWatch Integration, by Amazon Web Services: <br>https://youtu.be/y80Vn-FkBMc?si=QHpwn9cOdP8pnJeb <br><br>
       - Device data to dashboard in 10 minutes - A demonstration, by AWS IoT: <br>https://youtu.be/z8T4hAERuOg?si=HcFGYDp3uZTYAebf <br><br>
       - Getting Started with Amazon AWS IoT Core using ESP32 || Creating Thing, Policy & Certificates, by How to Electronics:<br> https://youtu.be/idf-gGXvIu4?si=DgLb1AGkXwcngXms <br><br>
+       - Como Instalar a ESP32 na IDE 2.0 do Arduino :<br> https://www.youtube.com/watch?v=ROkhP5oWRUU
     </p>
   </section>
 </main>
