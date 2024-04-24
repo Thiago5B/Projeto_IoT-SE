@@ -105,6 +105,9 @@
           <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_17.png">
         </figure>
       <br>Selecione e instale o plugin <strong>"Amazon Timestream"</strong>.<br>
+      <figure>
+          <img src="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/img/graf_18.png">
+        </figure>
     </p>
   </section>
   <h3>Siga para o arquivo <a href=""><strong> da próxima seção</a></strong> do manual</h3>
