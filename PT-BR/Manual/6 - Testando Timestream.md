@@ -34,7 +34,7 @@
         </figure> 
       </p>
     </article>
-    <h3>Siga para o arquivo <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/7%20-%20Configurar%20Grafana.md"><strong> da próxima seção</a></strong> do manual</h3>
+    <h3>Siga para o arquivo <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/7%20-%20Conex%C3%A3o%20Timestream-Grafana.md"><strong> da próxima seção</a></strong> do manual</h3>
   </section>
 </main>
 </body>
