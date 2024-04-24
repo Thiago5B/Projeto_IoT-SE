@@ -44,7 +44,7 @@
         </figure>
       </p>
     </article>
-    <h3>Follow the file to <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/PT-BR/Manual/2%20-%20Configurando%20%22Coisa%22"><strong> the next section</a></strong> of the manual</h3>
+    <h3>Follow the file to <a href="https://github.com/Thiago5B/Projeto_IoT-SE/blob/main/English/Manual/2%20-%20Configuring%20Thing.md"><strong> the next section</a></strong> of the manual</h3>
   </section>
 </main>
 </body>
